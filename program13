@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no of arrays");
+        int a = sc.nextInt();
+        System.out.println("Enter the elements");
+        int arr[] = new int[a];
+        for(int i=0;i<a;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Enter the number to be searched  ");
+        int x = sc.nextInt();
+        int count=0;
+        for(int i=0;i<a;i++){
+            if(arr[i]==x)
+                System.out.println(i+" "+arr[i]);
+            else
+                count++;
+                if(count==arr.length)
+                    System.out.println("Not found");
+        }
+   }
+}
