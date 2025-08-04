@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no of arrays");
+        int a = sc.nextInt();
+        int arr[] = new int[a];
+        for(int i=0;i<a;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<a;i++){
+            System.out.println(arr[i]);
+        }
+        System.out.println("Enter the key");
+        int x = sc.nextInt();
+        for(int i=0;i<a;i++){
+            if(arr[i]==x)
+                System.out.println(+arr[i]+" "+x);
+        }
+                 System.out.println("Not present");
+            
+        }
+    }
